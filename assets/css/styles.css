@@ -2,4 +2,31 @@
 
 * {
 	font-family: Arial;
+	line-height: 1.4em;
+}
+
+p a {
+	font-family: 'courier new', courier, monospace;
+	font-size: 1.3em;
+	color:red;
+	text-decoration: none;
+	font-weight: bold;	
+
+}
+
+p a:hover {
+	color: dodgerblue;
+	border-bottom: 2px dotted dodgerblue;
+}
+
+ul.choices {
+	list-style-type: none;
+	width: 90%;
+}
+
+ul.choices li a {
+	color: red;
+	text-decoration: none;
+	font-weight: bold;
+	border:4px dashed #2e3d28;
 }
