@@ -1,3 +1,19 @@
+.page {
+    display: none;
+}
+
+.page:target {
+    display: block;
+}
+
+body:not(:has(.page:target)) #wake {
+    display: block;
+}
+
+html {
+    background: #170005;
+}
+
 h1 {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
@@ -97,17 +113,6 @@ li {
     margin: .9rem 0;
 }
 
-.page {
-    display: none;
-}
-
-.page:target {
-    display: block;
-}
-
-body:not(:has(:target)) #wake {
-    display: block;
-}
 
 #wake {
     --gif: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW5jZ2Nxc2docnBrYTh6bjM1MXF5emN1azU1aXl0M2U1NDhreW5nbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZkUMyzW7Q7quI/giphy.gif');
@@ -133,7 +138,15 @@ body:not(:has(:target)) #wake {
     --gif: url('https://i.pinimg.com/originals/ca/b2/46/cab2463eccff08174ce7fe410b71da26.gif');
 }
 
-#sleep {
+#bar {
+    --gif: url('https://i.pinimg.com/originals/ca/b2/46/cab2463eccff08174ce7fe410b71da26.gif');
+}
+
+#home {
+    --gif: url('https://i.pinimg.com/originals/de/14/fe/de14fe3a0837dd198411c12b16d3278e.gif');
+}
+
+#homefree {
     --gif: url('https://i.pinimg.com/originals/de/14/fe/de14fe3a0837dd198411c12b16d3278e.gif');
 }
 
