@@ -86,3 +86,65 @@ a:visited {
 
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+
+}
+
+li {
+    margin: .9rem 0;
+}
+
+.page {
+    display: none;
+}
+
+.page:target {
+    display: block;
+}
+
+body:not(:has(:target)) #wake {
+    display: block;
+}
+
+#wake {
+    --gif: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW5jZ2Nxc2docnBrYTh6bjM1MXF5emN1azU1aXl0M2U1NDhreW5nbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZkUMyzW7Q7quI/giphy.gif');
+}
+
+#commute {
+    --gif: url('https://i.pinimg.com/originals/ca/b2/46/cab2463eccff08174ce7fe410b71da26.gif');
+}
+
+#work {
+    --gif: url('https://i.pinimg.com/originals/38/3e/0e/383e0edf60a2ae892a686b18acdcb148.gif');
+}
+
+#terms {
+    --gif: url('https://i.pinimg.com/originals/de/14/fe/de14fe3a0837dd198411c12b16d3278e.gif');
+}
+
+#lunch {
+    --gif: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW5jZ2Nxc2docnBrYTh6bjM1MXF5emN1azU1aXl0M2U1NDhreW5nbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZkUMyzW7Q7quI/giphy.gif');
+}
+
+#evening {
+    --gif: url('https://i.pinimg.com/originals/ca/b2/46/cab2463eccff08174ce7fe410b71da26.gif');
+}
+
+#sleep {
+    --gif: url('https://i.pinimg.com/originals/de/14/fe/de14fe3a0837dd198411c12b16d3278e.gif');
+}
+
+.page::before {
+
+    content: "";
+    position: fixed;
+    inset:0;
+    z-index: -1;
+    background-image: linear-gradient(135deg, #170005e6, #170005cc), var(--gif);
+    background-size: cover;
+    background-position: center;
+}
+
