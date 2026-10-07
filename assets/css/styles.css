@@ -56,3 +56,33 @@ h1 {
     color: #72eaf8;
     font-weight: 700;
 }
+
+.redheader {
+    color: #ff003c;
+    font-weight: 700;
+}
+
+.human {
+    color: #f5f5f5;
+    font-style: italic;
+}
+
+a {
+    color: #72eaf8;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 2px solid #ff003c
+}
+
+a:hover {
+    color: f5f5f5;
+    box-shadow: 0 0 10px 0 #ff003c40;
+
+}
+
+a:visited {
+    color: #5b7f84;
+    border-color: #5a1a2a;
+
+}
+
